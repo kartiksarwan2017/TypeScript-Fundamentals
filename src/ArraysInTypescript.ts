@@ -23,7 +23,7 @@
 // };
 
 
-// type UserName = (n: number, m: number) => number;
+// type UserName = (n: string, m: string) => string;
 
 // const functionSample: UserName = (n, m) => {
 //     console.log(n, m);

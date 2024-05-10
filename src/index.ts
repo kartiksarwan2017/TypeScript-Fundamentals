@@ -63,6 +63,25 @@ const func3 = (n:number, m: number): number => {
 };
 
 
+// Functions Which Return Promises
+const func4 = async (): Promise<number> => {
+    return 24;
+}
+
+let res = func4().then((data) => console.log(data));
+console.log(res);
+
+// Return Type Annotations
+const func5 = (n: number, m: number): number => {
+    return n * m;
+}
+
+console.log(func5(4, 7));
+
+
+
+
+
 
 
 
