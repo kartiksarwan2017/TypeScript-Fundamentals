@@ -71,3 +71,22 @@
 // };
 
 // console.log(functionOne(10, 20));
+
+
+/* Rest Operator -> We exactly dont know how many parameters will be there in a function,
+ so we will recieve all the parameters as an array*/
+// type FuncType = (n: number, m: number, l?: number) => number;
+
+// const funcOne = (...m: number[]) => {
+//     return m;
+// };
+
+// console.log(funcOne(10, 20, 30, 40));
+
+
+// type FuncType = (...m: number[]) => number[];
+// const funcOne: FuncType = (...m) => {
+//   return m;
+// };
+
+// console.log(funcOne(10, 20, 30, 40));
