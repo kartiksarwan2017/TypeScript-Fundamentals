@@ -101,8 +101,8 @@
 
 /* Defining function with type Aliases */
 
-type FuncType = (n: number) => number;
-const functionTwo: FuncType = function (n) {
-    return n;
-};
+// type FuncType = (n: number) => number;
+// const functionTwo: FuncType = function (n) {
+//     return n;
+// };
 
