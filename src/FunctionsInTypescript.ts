@@ -98,7 +98,6 @@
 // }
 
 
-
 /* Defining function with type Aliases */
 
 // type FuncType = (n: number) => number;

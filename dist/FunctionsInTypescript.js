@@ -58,3 +58,12 @@
 //   return m;
 // };
 // console.log(funcOne(10, 20, 30, 40));
+/* General Function */
+// function functionTwo(n: number): number {
+//     return 45;
+// }
+/* Defining function with type Aliases */
+// type FuncType = (n: number) => number;
+// const functionTwo: FuncType = function (n) {
+//     return n;
+// };
