@@ -64,13 +64,16 @@ because the major difference between type and interface is Interface could be ex
 
 // interface NewObj extends Obj {
 //     scholar: boolean
-//     func?: (n: number, m: number) => void;
+//     func: (n: number, m: number) => void;
 // };
 
 // const newObj:NewObj = {
 //     height: 135,
 //     weight: 30,
-//     scholar: true
+//     scholar: true,
+//     func: (n, m) => {
+//         console.log(n*m)
+//     }
 // };
 
 // const kendal: NewObj = {
@@ -82,14 +85,13 @@ because the major difference between type and interface is Interface could be ex
 //     }
 // }
 
+// kendal?.func(20, 10); 
 
 
-/* Another way  Using type in Interface */
 
-type FuncType = (n: number, m: number) => void;
 interface NewObj extends Obj {
     scholar: boolean
-    func: FuncType;
+    func: (n: number, m: number) => void;
 };
 
 const newObj:NewObj = {
@@ -110,4 +112,34 @@ const kendal: NewObj = {
     }
 }
 
-kendal.func(20, 10);
+kendal.func(20, 10); 
+
+
+
+/* Another way  Using type in Interface */
+
+// type FuncType = (n: number, m: number) => void;
+// interface NewObj extends Obj {
+//     scholar: boolean
+//     func: FuncType;
+// };
+
+// const newObj:NewObj = {
+//     height: 135,
+//     weight: 30,
+//     scholar: true,
+//     func: (n, m) => {
+//         console.log(n*m)
+//     }
+// };
+
+// const kendal: NewObj = {
+//     height: 180,
+//     weight: 80,
+//     scholar: true,
+//     func: (n, m) => {
+//         console.log(n*m)
+//     }
+// }
+
+// kendal.func(20, 10); 
