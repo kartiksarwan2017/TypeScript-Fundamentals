@@ -1,5 +1,5 @@
 /* Classes in Typescript */
-
+// Properties in class are by default public
 // class Player {
 //     height;
 //     weight;
@@ -19,11 +19,11 @@
 
 /* Access modifiers in Typescript */
 // class Player {
-//     private hieght;
+//     private height;
 //     public weight;
 
-//     constructor(hieght: number, weight: number) {
-//         this.height = hieght;
+//     constructor(height: number, weight: number) {
+//         this.height = height;
 //         this.weight = weight;
 //     }
 
@@ -34,7 +34,7 @@
 
 // const abhi = new Player(100, 150);
 
-/* Since height and weight are private we could not access it outside class */
+/* Since height is private we could not access it outside class */
 // console.log(abhi.height);
 // console.log(abhi.weight);
 

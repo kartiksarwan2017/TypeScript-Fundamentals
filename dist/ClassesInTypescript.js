@@ -1,5 +1,9 @@
 "use strict";
 /* Classes in Typescript */
+// Properties in class are by default public
+// class Player {
+//     height;
+//     weight;
 class Product {
     constructor(name, price, stock) {
         this.name = name;
