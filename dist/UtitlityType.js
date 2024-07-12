@@ -92,6 +92,49 @@
 //     country: string;
 // }
 // type Random = Omit<ShippingInfo, "country">
-/* Exclude<Type, ExcludedUnion>  */
-/*  Extract<Type, Union  */
-/* NonNullable<Type> */
+/* Exclude<Type, ExcludedUnion>
+   Exclude is used to omit the type we want
+*/
+// type MyUnion = string | number | boolean;
+// type Random = Exclude<MyUnion , boolean>
+/*  Extract<Type, Union
+    extract the type we want from the list of types
+*/
+// type MyUnion = string | number | boolean;
+// type Random = Extract<MyUnion , boolean>
+/* NonNullable<Type> it will omit the null and undefined  */
+// type MyUnion = string | number | boolean | null | undefined;
+// type Random = NonNullable<MyUnion>
+// type Random2 = Exclude<MyUnion, undefined | null>
+/* Parameters<Type>
+   provides the parameters of the function in the form of array
+*/
+// const myfunc = (a: number, b: string) => {
+//    console.log(a + b);
+// };
+// type Random = Parameters<typeof myfunc>
+/* ConstructorParameters<Type>
+   provides the parameters of the constructor in the form of array
+*/
+// class SampleClass {
+//    constructor(public s: string, public t: string) {}
+// }
+// type Random = ConstructorParameters<typeof SampleClass>
+/* ReturnType<Type>
+   we could use it in cases we want to know the return type of the function
+   that is coming from the other modules
+*/
+// const myfunc = (a: number, b: string) => {
+//    // console.log(a + b);
+//    return a + b;
+// };
+// type FuncType = ReturnType<typeof myfunc>
+/* InstanceType<Type> */
+// class SampleClass {
+//    constructor(public s: string, public t: string) {}
+// }
+// type Random = InstanceType<typeof SampleClass>
+// const user: Random = {
+//    s: "Hare",
+//    t: "Krishna!"
+// }

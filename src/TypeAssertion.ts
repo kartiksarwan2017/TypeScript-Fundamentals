@@ -163,25 +163,25 @@
 /* Cases in which we are not aware of the the Person Interface having how many keys */
 
 
-interface Person {
-    name: string;
-    email: string;
-}
+// interface Person {
+//     name: string;
+//     email: string;
+// }
 
-const myobj: Person = {
-    name: "krishna",
-    email: "krishna@gmail.com"
-};
-
-
-let key = "name";
-// myobj[key];
-
-myobj[key as keyof typeof myobj];
+// const myobj: Person = {
+//     name: "krishna",
+//     email: "krishna@gmail.com"
+// };
 
 
-const getData = (key: keyof Person): string => {
-    return myobj[key];
-}
+// let key = "name";
+// // myobj[key];
 
-getData("name");
+// myobj[key as keyof typeof myobj];
+
+
+// const getData = (key: keyof Person): string => {
+//     return myobj[key];
+// }
+
+// getData("name");

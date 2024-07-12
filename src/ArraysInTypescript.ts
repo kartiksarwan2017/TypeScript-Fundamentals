@@ -41,25 +41,25 @@
 // const arr: Array<string> = [];
 // const arr2: Array<string> = new Array(20);
 
-const arr: Array<string | number> = ["Krishna", 240, 7, 35, "Ram"];
-arr[0] = "Abhi";
+// const arr: Array<string | number> = ["Krishna", 240, 7, 35, "Ram"];
+// arr[0] = "Abhi";
 
-console.log(arr);
+// console.log(arr);
 
-const arr2: Array<string> = ["Krishna", "Ram"];
+// const arr2: Array<string> = ["Krishna", "Ram"];
 
-arr2.forEach(i => {
-    i.toLowerCase();
-});
+// arr2.forEach(i => {
+//     i.toLowerCase();
+// });
 
-console.log(arr2);
+// console.log(arr2);
 
-const arr3: Array<number> = [234.4, 344, 244];
+// const arr3: Array<number> = [234.4, 344, 244];
 
-// Here using forEach we could manipulate the element by inbuilt JS methods for number.
-arr3.forEach(i => {
-    console.log(i);
-});
+// // Here using forEach we could manipulate the element by inbuilt JS methods for number.
+// arr3.forEach(i => {
+//     console.log(i);
+// });
 
 /* To define a fixed sized array we define a Tuple */
 // const tupleArray: [number, number, number] = [244, 35, 3545];

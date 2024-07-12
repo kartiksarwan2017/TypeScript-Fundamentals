@@ -28,29 +28,29 @@
 /* If we don't defined the parameters type of the function it will detect it as any
     the function is having return type as void since its not returning anything
 */
-const func = (n, m) => {
-    console.log(n, m);
-};
-/* Here the return type of the function is number */
-const func1 = (n, m) => {
-    return n * m;
-};
-/* Here the return type of the function is string since we are explicitly converting the type while we are returning */
-const func2 = (n, m) => {
-    return String(n * m);
-};
-/* Explicitly mentioning the return type */
-const func3 = (n, m) => {
-    return n * m;
-};
-// Functions Which Return Promises
-const func4 = async () => {
-    return 24;
-};
-let res = func4().then((data) => console.log(data));
-console.log(res);
-// Return Type Annotations
-const func5 = (n, m) => {
-    return n * m;
-};
-console.log(func5(4, 7));
+// const func = (n:number, m: number) => {
+//    console.log(n, m);
+// };
+// /* Here the return type of the function is number */
+// const func1 = (n:number, m: number) => {
+//     return n*m;
+// };
+// /* Here the return type of the function is string since we are explicitly converting the type while we are returning */
+// const func2 = (n:number, m: number) => {
+//     return String(n*m);
+// };
+// /* Explicitly mentioning the return type */
+// const func3 = (n:number, m: number): number => {
+//     return n * m;
+// };
+// // Functions Which Return Promises
+// const func4 = async (): Promise<number> => {
+//     return 24;
+// }
+// let res = func4().then((data) => console.log(data));
+// console.log(res);
+// // Return Type Annotations
+// const func5 = (n: number, m: number): number => {
+//     return n * m;
+// }
+// console.log(func5(4, 7));
